@@ -1,0 +1,18 @@
+# 1. Ping microservice-1
+GET http://localhost:30080/ping
+
+###
+
+# 2. Ping microservice-2
+GET http://localhost:30081/ping
+
+
+###
+
+# 3. Ping microservice-2 from microservice-1
+GET http://localhost:30080/ping-ms-2
+
+###
+
+# 4. Ping microservice-1 from microservice-2
+GET http://localhost:30081/ping-ms-1
